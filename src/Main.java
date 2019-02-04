@@ -13,9 +13,9 @@ public class Main {
             System.out.println("Введите полное имя");
             fullName = reader.readLine().trim();
 
-        } while (!fullName.matches("[А-Я][а-я]+\\s[А-Я][а-я]+\\s[А-Я][а-я]+"));
+        } while (!fullName.matches("[А-Я][а-я]+\\s+[А-Я][а-я]+\\s+[А-Я][а-я]+"));
 
-        String[] splitedName = fullName.split("\\s");
+        String[] splitedName = fullName.split("\\s+");
         System.out.println("Фамилия: " + splitedName[0] + "\nИмя: " + splitedName[1] + "\nОтчество: "+splitedName[2]);
     }
 }
